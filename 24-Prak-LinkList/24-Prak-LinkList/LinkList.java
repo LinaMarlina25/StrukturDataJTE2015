@@ -15,7 +15,7 @@ public class LinkList {
         if (kepala == null)
             kepala = nodeBaru;
         else {
-            
+            // Iterate ke ujung
             Node sekarang = kepala;
             while (sekarang.berikut != null)
                 sekarang = sekarang.berikut;
@@ -44,17 +44,17 @@ public class LinkList {
 
     public void sisip (int setelah,Transaksi data){
        
-        
+        // Indeks negatif tidak ada
         if (setelah < 0)
         return;
         
-        
+        // Cari node tempat sisip
            Node sekarang = elemenKe(setelah);
            if (sekarang == null)
-           
+           // Tidak ketemu, batal
            return;
                    
-   
+      // Sisip
       Node baru = new Node(data);
       baru.berikut = sekarang.berikut;
       sekarang.berikut = baru;
@@ -64,14 +64,14 @@ public class LinkList {
     
     public void hapus (int indeksSebelum){
        
-       
+        // Indeks negatif tidak ada
         if (indeksSebelum < 0)
         return;
         
-        
+        // Cari node tempat sisip
            Node sekarang = elemenKe(indeksSebelum);
            if (sekarang == null)
-          
+           // Tidak ketemu, batal
             return;
         
       // hapus
