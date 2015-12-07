@@ -44,16 +44,17 @@ public class LinkList {
 
     public void sisip (int setelah,Transaksi data){
        
-       
+        
         if (setelah < 0)
         return;
-       
+        
+        
            Node sekarang = elemenKe(setelah);
            if (sekarang == null)
-          
+           
            return;
                    
-      
+   
       Node baru = new Node(data);
       baru.berikut = sekarang.berikut;
       sekarang.berikut = baru;
@@ -63,17 +64,17 @@ public class LinkList {
     
     public void hapus (int indeksSebelum){
        
-        
+       
         if (indeksSebelum < 0)
         return;
         
         
            Node sekarang = elemenKe(indeksSebelum);
            if (sekarang == null)
-           
+          
             return;
         
-      
+      // hapus
          sekarang = sekarang.berikut.berikut;
       
 
