@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ArrayListInteger()
+comment1.params=baru
+comment1.target=void\ tambah(java.lang.Integer)
+comment2.params=
+comment2.target=int\ panjang()
+comment3.params=
+comment3.target=void\ tampilkan()
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5
